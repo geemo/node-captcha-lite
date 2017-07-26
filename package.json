@@ -2,7 +2,7 @@
   "name": "captcha-lite",
   "version": "0.0.0",
   "description": "Lite captcha generator by Pure Javascript.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/ -d lib/"
