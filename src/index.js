@@ -1,6 +1,7 @@
 'use strict';
 
 const PNGlib = require('node-pnglib');
+const RGBA = PNGlib.RGBA;
 const FONTS = require('./font');
 
 class Captcha extends PNGlib {
@@ -12,6 +13,12 @@ class Captcha extends PNGlib {
     let idx = font.chars.indexOf(ch);
 
     if (idx >= 0) {
+      let rgba = color;
+      // 预解析颜色，避免在setPixel中进行频繁的解析操作
+      if (typeof color === 'string') {
+        rgba = RGBA(color);
+      }
+
       let fontData = font.data[idx];
       let w = font.w;
       let y0 = y;
@@ -32,7 +39,7 @@ class Captcha extends PNGlib {
           for (let bitPos = width - 1; bitPos >= 0; --bitPos) {
             mask = 1 << bitPos;
             if ((d & mask) === mask) {
-              this.setPixel(x + x0 + (8 - bitPos), y0, color);
+              this.setPixel(x + x0 + (8 - bitPos), y0, rgba);
             }
           }
         }
