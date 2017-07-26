@@ -1,0 +1,29 @@
+{
+  "name": "node-captcha-lite",
+  "version": "1.0.0",
+  "description": "Lite captcha generator by Pure Javascript.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geemo/node-captcha-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geemo/node-captcha-lite/issues"
+  },
+  "homepage": "https://github.com/geemo/node-captcha-lite#readme",
+  "dependencies": {
+    "node-pnglib": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
