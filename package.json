@@ -1,0 +1,33 @@
+{
+  "name": "captcha-lite",
+  "version": "0.0.0",
+  "description": "Lite captcha generator by Pure Javascript.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElemeFE/node-captcha-lite.git"
+  },
+  "keywords": [
+    "node-captcha",
+    "captchapng"
+  ],
+  "author": "ElemeFe",
+  "license": "MIT",
+  "dependencies": {
+    "node-pnglib": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ElemeFE/node-captcha-lite/issues"
+  },
+  "homepage": "https://github.com/ElemeFE/node-captcha-lite#readme"
+}

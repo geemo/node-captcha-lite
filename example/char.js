@@ -1,9 +1,3 @@
-# node-captcha-lite
-Lite captcha generator by Pure Javascript.
-
-**Let's try to draw number:**
-
-```javascript
 'use strict';
 // draw number
 
@@ -21,8 +15,3 @@ for (let i = 0; i < 10; ++i) {
 }
 
 fs.writeFileSync(path.resolve(__dirname, './char.png'), png.getBuffer());
-```
-
-Output:
-
-![line](/example/char.png)
